@@ -1,0 +1,10 @@
+export { Hero } from "./Hero";
+export { Problem } from "./Problem";
+export { Comparison } from "./Comparison";
+export { Features } from "./Features";
+export { MoreFeatures } from "./MoreFeatures";
+export { WhoItsFor } from "./WhoItsFor";
+export { Promise } from "./Promise";
+export { BetaPerks } from "./BetaPerks";
+export { FAQ } from "./FAQ";
+export { FinalCTA } from "./FinalCTA";
