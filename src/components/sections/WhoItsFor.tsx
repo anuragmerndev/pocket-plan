@@ -1,6 +1,7 @@
 "use client";
 
-import { Card, CardContent } from "@/components/ui";
+import { Card, CardContent, Button } from "@/components/ui";
+import { ArrowRight } from "lucide-react";
 
 const personas = [
   {
@@ -39,6 +40,11 @@ const personas = [
 ];
 
 export function WhoItsFor() {
+  const scrollToWaitlist = () => {
+    const element = document.getElementById("waitlist");
+    element?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section className="py-20 lg:py-32">
       <div className="container-landing">
@@ -81,6 +87,21 @@ export function WhoItsFor() {
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        {/* Mid-page CTA */}
+        <div className="text-center mt-16 space-y-6">
+          <p className="text-lg text-muted-foreground max-w-xl mx-auto">
+            See yourself in any of these? You&apos;re exactly who we built this for.
+          </p>
+          <Button
+            size="lg"
+            onClick={scrollToWaitlist}
+            className="group"
+          >
+            Save My Spot — 500 Users Only
+            <ArrowRight className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" />
+          </Button>
         </div>
       </div>
     </section>

@@ -15,7 +15,7 @@ const features = [
     icon: WifiOff,
     title: "Works offline",
     description:
-      "No internet? No problem. Your data is stored locally and syncs when you're back online.",
+      "Track expenses on a plane, in a subway, anywhere. Your data syncs automatically when you're back online — no lost transactions.",
     color: "primary" as const,
   },
   {
@@ -34,9 +34,9 @@ const features = [
   },
   {
     icon: Lock,
-    title: "Your data, your control",
+    title: "Your Data Stays Yours. Forever.",
     description:
-      "We don't sell your data. Export everything anytime. You own your information.",
+      "No selling your info. No ads. No tracking. Export everything with one tap or delete your account completely. You're in control.",
     color: "primary" as const,
   },
   {
@@ -82,10 +82,10 @@ export function MoreFeatures() {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
-            And there&apos;s more
+            The Features Other Apps <span className="text-gradient">Charge Extra For</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            The little things that make a big difference.
+            Privacy, speed, and offline access — included. Always.
           </p>
         </div>
 
