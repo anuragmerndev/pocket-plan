@@ -4,16 +4,16 @@ import { Card, CardContent } from "@/components/ui";
 import { Check, Clock } from "lucide-react";
 
 const perks = [
-  "Full access to all features during beta",
-  "Direct influence on the roadmap — your feedback shapes the product",
-  "Locked-in free tier even after public launch",
-  "Priority support via email or chat",
-  "Early access to new features before anyone else",
+  "Lifetime free access — locked in forever, even after public launch",
+  "Full premium features during beta (worth ₹10,000/year)",
+  "Direct line to the founders — your feedback shapes the roadmap",
+  "First access to new features before anyone else",
+  "Priority support and exclusive beta community access",
 ];
 
 export function BetaPerks() {
   // Calculate days until Jan 15
-  const launchDate = new Date("2025-01-15");
+  const launchDate = new Date("2026-01-15");
   const today = new Date();
   const daysUntilLaunch = Math.ceil(
     (launchDate.getTime() - today.getTime()) / (1000 * 60 * 60 * 24)
@@ -65,7 +65,7 @@ export function BetaPerks() {
                 {/* Date */}
                 <div>
                   <div className="text-5xl font-bold text-gradient">Jan 15</div>
-                  <div className="text-muted-foreground mt-2">2025</div>
+                  <div className="text-muted-foreground mt-2">2026</div>
                 </div>
 
                 {/* Countdown */}
@@ -97,7 +97,7 @@ export function BetaPerks() {
                     title="Feature Feedback Phase"
                   />
                   <TimelineItem
-                    date="Q2 2025"
+                    date="Q2 2026"
                     title="Public Launch"
                   />
                 </div>

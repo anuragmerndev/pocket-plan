@@ -29,9 +29,9 @@ export function Hero() {
                 <span className="text-gradient">this right now</span>?
               </h1>
               <p className="text-lg sm:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0 leading-relaxed">
-                Finally, a finance app that answers the question you actually
-                ask yourself — before tracking, budgeting, or analyzing. Know
-                where you stand. Make better decisions. Feel in control.
+                The first finance app designed around one simple question.
+                Track expenses, manage bills, hit savings goals — all without
+                guilt, complexity, or hidden fees.
               </p>
             </div>
 
@@ -42,7 +42,7 @@ export function Hero() {
                 onClick={scrollToWaitlist}
                 className="w-full sm:w-auto text-base group"
               >
-                Join the Beta Waitlist — Launching Jan 15
+                Get My Free Beta Access
                 <ArrowRight className="w-5 h-5 ml-2 transition-transform group-hover:translate-x-1" />
               </Button>
 

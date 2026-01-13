@@ -17,7 +17,7 @@ const faqs = [
   {
     question: "Is my financial data safe?",
     answer:
-      "Absolutely. Your data is encrypted, stored securely, and never sold. We use industry-standard security practices. Plus, you can export or delete your data anytime — you own it completely.",
+      "Yes. Your data is encrypted with bank-level AES-256 encryption both in transit and at rest. We never sell your information — ever. Plus, you can export or permanently delete your data anytime with one tap. You own your information completely.",
   },
   {
     question: "Do I need to link my bank account?",
@@ -38,6 +38,11 @@ const faqs = [
     question: "What if I have feedback or feature requests?",
     answer:
       "We love hearing from users! Beta members get direct access to our feedback channel. Your input genuinely shapes what we build next.",
+  },
+  {
+    question: "What if I decide PocketPlan isn't for me?",
+    answer:
+      "No problem. Beta access is completely free with zero commitment. Export your data and delete your account anytime — no questions asked, no hoops to jump through. We only want users who love the product.",
   },
 ];
 

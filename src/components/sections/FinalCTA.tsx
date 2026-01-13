@@ -78,11 +78,11 @@ export function FinalCTA() {
               {/* Headline */}
               <div className="space-y-4">
                 <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
-                  Ready to take control?
+                  Stop Guessing. <span className="text-gradient">Start Knowing.</span>
                 </h2>
                 <p className="text-lg text-muted-foreground max-w-xl mx-auto">
-                  Join the waitlist and be among the first 500 to experience
-                  PocketPlan. No spam, just an invite when we launch.
+                  Join the founding 500 and get your invite when we launch.
+                  No spam, just early access to financial clarity.
                 </p>
               </div>
 
@@ -101,41 +101,41 @@ export function FinalCTA() {
                     className="min-h-[52px] h-14 px-5 rounded-xl bg-background border border-border text-foreground text-base placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all disabled:opacity-50"
                   />
 
-                  {/* Email + Button row */}
-                  <div className="flex flex-col sm:flex-row gap-3">
-                    <input
-                      type="email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      placeholder="Enter your email"
-                      required
-                      disabled={status === "loading" || status === "success"}
-                      className="flex-1 min-h-[52px] h-14 px-5 rounded-xl bg-background border border-border text-foreground text-base placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all disabled:opacity-50"
-                    />
-                    <Button
-                      type="submit"
-                      size="lg"
-                      disabled={status === "loading" || status === "success"}
-                      className="whitespace-nowrap min-w-[140px]"
-                    >
-                      {status === "loading" ? (
-                        <>
-                          <Loader2 className="w-5 h-5 mr-2 animate-spin" />
-                          Joining...
-                        </>
-                      ) : status === "success" ? (
-                        <>
-                          <Check className="w-5 h-5 mr-2" />
-                          You&apos;re in!
-                        </>
-                      ) : (
-                        <>
-                          Join Waitlist
-                          <ArrowRight className="w-5 h-5 ml-2" />
-                        </>
-                      )}
-                    </Button>
-                  </div>
+                  {/* Email input */}
+                  <input
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="Your best email for beta access"
+                    required
+                    disabled={status === "loading" || status === "success"}
+                    className="min-h-[52px] h-14 px-5 rounded-xl bg-background border border-border text-foreground text-base placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all disabled:opacity-50"
+                  />
+
+                  {/* Submit button */}
+                  <Button
+                    type="submit"
+                    size="lg"
+                    disabled={status === "loading" || status === "success"}
+                    className="whitespace-nowrap"
+                  >
+                    {status === "loading" ? (
+                      <>
+                        <Loader2 className="w-5 h-5 mr-2 animate-spin" />
+                        Joining...
+                      </>
+                    ) : status === "success" ? (
+                      <>
+                        <Check className="w-5 h-5 mr-2" />
+                        You&apos;re in!
+                      </>
+                    ) : (
+                      <>
+                        Claim My Free Lifetime Access
+                        <ArrowRight className="w-5 h-5 ml-2" />
+                      </>
+                    )}
+                  </Button>
                 </div>
 
                 {/* Error message */}
@@ -148,7 +148,7 @@ export function FinalCTA() {
                 {/* Success message */}
                 {status === "success" && (
                   <p className="text-sm text-primary mt-3 animate-fade-in">
-                    Thanks for joining! We&apos;ll be in touch soon.
+                    You&apos;re in! Check your email — we just sent you beta details.
                   </p>
                 )}
               </form>

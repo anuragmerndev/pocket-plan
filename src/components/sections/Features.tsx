@@ -6,9 +6,9 @@ import { LayoutDashboard, CalendarClock, Target } from "lucide-react";
 const features = [
   {
     icon: LayoutDashboard,
-    title: "The Dashboard That Actually Helps",
+    title: "See Your Complete Financial Picture — In 3 Seconds",
     description:
-      "Your entire financial picture in one glance. Total balance, monthly income vs expenses, savings progress, and upcoming bills — all updated in real-time. No endless scrolling. No confusing charts. Just the numbers that matter.",
+      "Stop digging through apps and bank statements. Your entire financial picture in one glance: total balance, this month's income vs expenses, savings progress, and upcoming bills. All updated in real-time.",
     highlights: [
       "One-tap transaction logging with smart categories",
       "Visual income vs expense comparison",
@@ -19,7 +19,7 @@ const features = [
   },
   {
     icon: CalendarClock,
-    title: "Bills & SIPs — Never Miss What Matters",
+    title: "Never Get Blindsided By Bills Again",
     description:
       "Track recurring expenses, subscriptions, EMIs, and investment SIPs in one place. Get reminded before they're due. See exactly how much is committed before you even think about spending more.",
     highlights: [
@@ -32,7 +32,7 @@ const features = [
   },
   {
     icon: Target,
-    title: "Savings Goals That Feel Real",
+    title: "Turn Dreams Into Plans (Without the Guilt)",
     description:
       "Whether it's a vacation, emergency fund, or that gadget you've been eyeing — set a goal, add money when you can, and watch the progress. No rigid rules. Just a clear path to what you want.",
     highlights: [
