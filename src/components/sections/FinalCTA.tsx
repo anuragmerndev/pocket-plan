@@ -28,6 +28,7 @@ export function FinalCTA() {
     try {
       const { error } = await supabase
         .from('waitlist')
+        // @ts-expect-error - Supabase type inference issue with Next.js build
         .insert({
           name: name.trim(),
           email: email.trim().toLowerCase(),
